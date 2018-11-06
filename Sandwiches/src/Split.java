@@ -25,8 +25,11 @@ public class Split {
 		//What happens if you "I reallyreally likeapples".split("really") ?
 		 		System.out.println(Arrays.toString("I really really like apples".split("really")));
 	
-	 
+	 System.out.println("Part 1");
 	 System.out.println(Sandwichsplit("applespineapplesbreadlettustomatobaconmayohambreadcheese"));
+	 System.out.println(Sandwichsplitspace("apples pineapples bread lettus tomato bacon mayo ham bread cheese"));
+	
+	 
 	 
 	 }
 		//Your task Part 1:
@@ -61,6 +64,12 @@ public class Split {
 		* Again, what if it's a fancy sandwich with multiple pieces of bread?
 
 		*/
-
+		 
+		 public static String Sandwichsplitspace(String sandwich){
+			 String answer = (Arrays.toString(sandwich.split(" ")));
+			 return answer;
+		 }
+		 
+		 
 		 
 }
